@@ -1,0 +1,6 @@
+[Unit]
+Description=CyberSafely vault: build tomorrow's plan with Claude
+
+[Service]
+Type=oneshot
+ExecStart=%h/Desktop/CyberSafely/.claude/scripts/evening-plan.sh

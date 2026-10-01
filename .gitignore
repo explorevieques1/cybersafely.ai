@@ -1,0 +1,26 @@
+# Allowlist: ignore everything by default, then opt in the non-sensitive parts.
+# New notes, drafts, contracts, contact lists and exports stay out unless added here on purpose.
+/*
+!/.gitignore
+!/.claude/
+!/Templates/
+!/.obsidian/
+
+# Secrets and private pages: never back these up (also covered by the allowlist above)
+Credentials.md
+.env
+.env.*
+Private/
+Notion/
+
+# Contract milestones, targets and the generated calendar stay out of public view
+.claude/hooks/deadlines.tsv
+.claude/settings.local.json
+
+# Local tool state
+.claudian/
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/*/data.json
+.trash/
+.DS_Store

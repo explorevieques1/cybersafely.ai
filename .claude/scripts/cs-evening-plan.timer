@@ -1,0 +1,9 @@
+[Unit]
+Description=Run the CyberSafely evening plan at 7 PM Puerto Rico time on weekdays
+
+[Timer]
+OnCalendar=Mon..Fri 19:00 America/Puerto_Rico
+Persistent=true
+
+[Install]
+WantedBy=timers.target
